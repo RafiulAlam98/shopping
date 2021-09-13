@@ -18,18 +18,28 @@
 </head>
 
 <body>
-  <header></header>
+<!-- Header Section starts -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><span class="webName fs-3 ">Quickmart E-Seller</span></a>
+      <h2 class="color">Have Some Shopping</h2>
+    </div>
+  </nav>
+</header>
 
+<!-- main section starts -->
   <main class="main">
+    
 <!-- Search And button Section -->
-<section>
-  <div class="input-group mb-3 w-50 mx-auto mt-4">
-    <input id="input-field" type="text" class="form-control" placeholder="Search Products"
+  <section>
+    <div class="input-group mb-3 w-50 mx-auto mt-4">
+      <input id="input-field" type="text" class="form-control" placeholder="Search Products"
       aria-label="Recipient's username" aria-describedby="button-addon2">
-    <button onclick="loadData()" class="btn btn-outline-secondary bg-info fs-5 fw-bold border-0" type="button"
+      <button onclick="loadData()" class="btn btn-outline-secondary bg-info fs-5 fw-bold border-0" type="button"
       id="button-addon2">Search</button>
       </div>
-    </section>
+  </section>
     
     <!-- Card Display Section -->
     <section class="mt-4">
@@ -39,6 +49,7 @@
         
         </div>
       </div>
+      <!-- cart section -->
       <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
         <div class="cart" id="my-cart">
           <table class="table">
@@ -54,31 +65,31 @@
             <tbody>
               <tr>
                 <th>Total Added-Products:</th>
-                <td><span id="total-Products">0</span></td>
+                <td><span id="total-Products" class="color">0</span></td>
                 <td></td>
                 <td></td>
               </tr>
               <tr>
                 <th>Price:</th>
-                <td>$ <span id="price">0</span></td>
+                <td class="color">$ <span id="price">0</span></td>
                 <td></td>
                 <td></td>
               </tr>
               <tr>
                 <th>Delivery-Charge:</th>
-                <td>$ <span id="delivery-charge">20</span></td>
+                <td class="color">$ <span id="delivery-charge">20</span></td>
                 <td></td>
                 <td></td>
               </tr>
               <tr>
                 <th>Total-Tax:</th>
-                <td>$ <span id="total-tax">0</span></td>
+                <td class="color">$ <span id="total-tax">0</span></td>
                 <td></td>
                 <td></td>
               </tr>
               <tr>
                 <th scope="row">Total</th>
-                <td colspan="2">$ <span id="total">0</span></td>
+                <td colspan="2" class="color">$ <span id="total">0</span></td>
                 <td></td>
               </tr>
             </tbody>
@@ -91,6 +102,7 @@
     </div>
     </section>
   </main>
+
   <footer></footer>
 
   <!-- add javascript  file  -->
