@@ -12,7 +12,7 @@ const showProducts = (products) => {
     console.log(product)
     const image = product.image;
     const div = document.createElement("div");
-    div.classList.add('col','d-flex','justify-content-center','mt-3');
+    div.classList.add('d-flex','justify-content-center','mt-3');
     div.innerHTML = `<div class="card w-75 single-product" style=" height: 28rem;">
       <div>
     <img class="product-image" src=${image}></img>
@@ -20,8 +20,8 @@ const showProducts = (products) => {
       <h3 class="h5 fs-4 fw-normal">${product.title.slice(0,35)}</h3>
       <p>Category: <span class="color">${product.category}</span> </p>
       <h2>Price:<span class="color">$ ${product.price}</span> </h2>
-      <p>Rating: <span class="color">${product.rating.rate}</span> 
-          Count:<span class="color"> ${product.rating.count}</span></p>
+      <p>Rating: <span class="color">${product.rating.rate}</span></p> 
+      <p>Review: <span class="color"> ${product.rating.count}</span></p>
       <div class = "btn-div">
           <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="btn bg-success bg-gradient text-light text-bold rounded">Add to Cart</button>
           <button id="details-btn" class="btn bg-info bg-gradient text-dark text-bold rounded">Details</button>
